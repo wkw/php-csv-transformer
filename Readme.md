@@ -18,7 +18,7 @@
 
 ## Usage:
 
-`php main.php tasks/TemplateTask.php examples/data/Towed_Vehicles.csv`
+`php main.php tasks/TemplateTask.php ../examples/data/Towed_Vehicles.csv`
 
 generally:
 
