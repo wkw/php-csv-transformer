@@ -33,8 +33,8 @@ php main.php tasks/YourTask.php <input-file.csv> [optional task arguments]
 - Duplicate `TemplateTask.php` and ensure the task base filename matches your subclass name.
 - Write your per-row processing logic in the method `processRow($row, $idx)`.
 - To remove rows from the output, return `NULL` from `processRow`.
-- To modify the header row (if any), do it in `processRow` when `$idx===0`. see: [ColumnsSubset.php](examples/ColumnsSubset.php).
-- Lookup the column index for any header by column title with base class method `columnIndex($colTitle)`. see: [TowedVehiclesFilter.php](examples/TowedVehiclesFilter.php).
+- To modify the header row (if any), do it in `processRow` when `$idx===0`. see: [ColumnsSubset.php](examples/tasks/ColumnsSubset.php).
+- Lookup the column index for any header by column title with base class method `columnIndex($colTitle)`. see: [TowedVehiclesFilter.php](examples/tasks/TowedVehiclesFilter.php).
 - Rows can be collected inside the Task instance if required to generate derived data (and/or write to files, send to API, etc.).
 
 
