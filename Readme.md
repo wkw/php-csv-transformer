@@ -47,6 +47,7 @@ php main.php tasks/YourTask.php <input-file.csv> [optional task arguments]
 ## Expansion Ideas
 
   - Multiple tasks (either per-line or per-file).
+  - pass rows as objects with the headers as keys.
   - autoload all php files in `tasks` directory.
   - Optional json config file to simplify cmd-line arguments
   - Optionally read from STDIN.
